@@ -1,0 +1,37 @@
+<h1>Step 2</h1>
+<div>
+  <form [formGroup]="addressInfoForm" class="form-container" (ngSubmit)="onSubmit()">
+    <div class="step-field">
+      <mat-form-field class="field-full-width" appearance="fill" subscriptSizing="dynamic" floatLabel="always">
+        <mat-label>Country</mat-label>
+        <mat-select required formControlName="country" placeholder="Select country">
+          <mat-option
+            (onSelectionChange)="onCountrySelect($event)"
+            *ngFor="let country of countries"
+            [value]="country.countryCode">
+            {{ country.name }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="country.invalid">
+          {{ getCountryErrorMessage() }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="step-field">
+      <mat-form-field class="field-full-width" appearance="fill" subscriptSizing="dynamic" floatLabel="always">
+        <mat-label>Province</mat-label>
+        <mat-select required formControlName="province" placeholder="Please select country first">
+          <mat-option *ngFor="let province of provinces" [value]="province.provinceId">
+            {{ province.name }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="province.invalid">
+          {{ getProvinceErrorMessage() }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="submit-btn">
+      <button mat-raised-button type="submit">Save</button>
+    </div>
+  </form>
+</div>

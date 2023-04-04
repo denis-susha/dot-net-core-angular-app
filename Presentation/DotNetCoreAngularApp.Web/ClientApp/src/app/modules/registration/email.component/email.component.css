@@ -1,0 +1,4 @@
+.checkbox-error {
+  font-size: var(--mdc-typography-caption-font-size, 12px);
+  padding: 0 16px;
+}

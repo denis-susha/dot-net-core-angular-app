@@ -1,0 +1,61 @@
+<h1>Step 1</h1>
+<div>
+  <form [formGroup]="registrationInfoForm" class="form-container" (ngSubmit)="onSubmit()">
+    <div class="step-field">
+      <mat-form-field class="field-full-width" appearance="fill" subscriptSizing="dynamic">
+        <mat-label>Login</mat-label>
+        <input matInput placeholder="email@example.com" required formControlName="email" maxlength="320" />
+        <mat-error *ngIf="email.invalid">
+          {{ getEmailErrorMessage() }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="step-field">
+      <mat-form-field class="field-full-width" appearance="fill" subscriptSizing="dynamic">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          [type]="hidePassword ? 'password' : 'text'"
+          required
+          formControlName="password"
+          maxlength="50" />
+        <mat-error *ngIf="password.invalid">
+          {{ getPasswordErrorMessage() }}
+        </mat-error>
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hidePassword = !hidePassword"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hidePassword">
+          <mat-icon>
+            {{ hidePassword ? 'visibility_off' : 'visibility' }}
+          </mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <div class="step-field">
+      <mat-form-field class="field-full-width" appearance="fill" subscriptSizing="dynamic">
+        <mat-label>Confirm password</mat-label>
+        <input
+          matInput
+          [type]="hidePassword ? 'password' : 'text'"
+          required
+          formControlName="confirmPassword"
+          maxlength="50" />
+        <mat-error *ngIf="confirmPassword.invalid">
+          {{ getConfirmPasswordErrorMessage() }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="step-field">
+      <mat-checkbox formControlName="acceptTerms" color="primary"> I agree </mat-checkbox>
+      <mat-error *ngIf="acceptTerms.invalid" class="checkbox-error">
+        {{ getAcceptTermsErrorMessage() }}
+      </mat-error>
+    </div>
+    <div class="submit-btn">
+      <button mat-raised-button type="submit">Go to step 2</button>
+    </div>
+  </form>
+</div>

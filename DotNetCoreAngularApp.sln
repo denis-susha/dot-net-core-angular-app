@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{885DA019-8CAC-4575-91B9-583B55CD2FF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreAngularApp.Web", "Presentation\DotNetCoreAngularApp.Web\DotNetCoreAngularApp.Web.csproj", "{ECA90593-285C-41DA-8D24-EF651FF002A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{974D43F0-8450-4F4D-B3AA-439AA921C8A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{2F831F08-1799-4097-AEB0-A311CD8A3EDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreAngularApp.DataAccess", "DataAccess\DotNetCoreAngularApp.DataAccess\DotNetCoreAngularApp.DataAccess.csproj", "{9AC195A0-7E4E-4225-BC8E-3C6C6587DF79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreAngularApp.BusinessLogic", "BusinessLogic\DotNetCoreAngularApp.BusinessLogic\DotNetCoreAngularApp.BusinessLogic.csproj", "{EC7B473D-63E1-4090-8D2E-3453BC97F698}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{43ABE9BB-5614-42F1-9D07-2C425F1B4BD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreAngularApp.BusinessLogic.Tests", "Tests\DotNetCoreAngularApp.BusinessLogic\DotNetCoreAngularApp.BusinessLogic.Tests.csproj", "{DD41B3DB-DBCB-47A0-BB81-4D5EEBD6CF19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66EF8C4D-B666-47AB-96C0-88DF8F27CE0B}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECA90593-285C-41DA-8D24-EF651FF002A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA90593-285C-41DA-8D24-EF651FF002A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA90593-285C-41DA-8D24-EF651FF002A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA90593-285C-41DA-8D24-EF651FF002A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC195A0-7E4E-4225-BC8E-3C6C6587DF79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC195A0-7E4E-4225-BC8E-3C6C6587DF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC195A0-7E4E-4225-BC8E-3C6C6587DF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC195A0-7E4E-4225-BC8E-3C6C6587DF79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC7B473D-63E1-4090-8D2E-3453BC97F698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7B473D-63E1-4090-8D2E-3453BC97F698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7B473D-63E1-4090-8D2E-3453BC97F698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7B473D-63E1-4090-8D2E-3453BC97F698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD41B3DB-DBCB-47A0-BB81-4D5EEBD6CF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD41B3DB-DBCB-47A0-BB81-4D5EEBD6CF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD41B3DB-DBCB-47A0-BB81-4D5EEBD6CF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD41B3DB-DBCB-47A0-BB81-4D5EEBD6CF19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ECA90593-285C-41DA-8D24-EF651FF002A9} = {885DA019-8CAC-4575-91B9-583B55CD2FF6}
+		{9AC195A0-7E4E-4225-BC8E-3C6C6587DF79} = {2F831F08-1799-4097-AEB0-A311CD8A3EDA}
+		{EC7B473D-63E1-4090-8D2E-3453BC97F698} = {974D43F0-8450-4F4D-B3AA-439AA921C8A4}
+		{DD41B3DB-DBCB-47A0-BB81-4D5EEBD6CF19} = {43ABE9BB-5614-42F1-9D07-2C425F1B4BD4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47FE203D-F8E3-48C2-808E-1FBDE6B8830E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+.registration-container {
+    max-width: 300px;
+    margin: auto;
+    padding-top: 10vh;
+}
+
+.form-container {
+    min-width: 150px;
+    max-width: 300px;
+    width: 100%;
+}
+  
+.step-field {
+margin-bottom: 1.5em;
+}
+
+.field-full-width {
+width: 100%;
+}
+
+.submit-btn {
+text-align: center;
+}
